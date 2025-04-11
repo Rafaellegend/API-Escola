@@ -1,10 +1,8 @@
 # API-Escola
 [![Python Version](https://img.shields.io/badge/3.13-Python-brightgreen?logo=python&logoColor=white&color=%233776AB)](https://www.python.org/downloads/)
 [![Django Version](https://img.shields.io/badge/5.2-Django-brightgreen?logo=django&logoColor=white&color=%23092E20)](https://www.djangoproject.com/download/)
-<!--- 
-Uma breve descrição sobre o que esse projeto faz e para quem ele é
--->
 
+Esse projéto faz parte da aula de Django REST Framework da plataforma [Alura](https://www.alura.com.br)
 
 ## 💻Pré-Requisitos
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
@@ -13,7 +11,6 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
     - [Python 3.13](https://www.python.org/downloads/)
     - [Django 5.2](https://www.djangoproject.com/download/)
     - [Django REST framework](https://www.django-rest-framework.org/#installation)
-    - [Markdown 3.7](https://pypi.org/project/Markdown/)
 
 > Versões Inferiores ou Superiores não testados
 
@@ -28,7 +25,7 @@ Clone o projeto
 Entre no diretório do projeto
 
 ```bash
-  cd my-project
+  cd API-Escola
 ```
 
 Crie o ambiente Virtual
@@ -43,18 +40,28 @@ Inicie o ambiente virtual
     ```
 - Linux
     ```bash
-      venv/Scripts/activate
+      source venv/Scripts/activate.fish
     ```
 
 - Mac
     ```bash
-      venv/Scripts/activate
+      source venv/Scripts/activate.fish
     ```
 
 Instale as dependências
 
 ```bash
   pip install -r requirements.txt
+```
+
+Realize as Migrações
+
+```bash
+  python manage.py makemigrations
+```
+
+```bash
+  python manage.py migrate
 ```
 
 Inicie o servidor
@@ -64,33 +71,59 @@ Inicie o servidor
 ```
 
 
-<!--- 
-## 📫Documentação da AP
-
-#### Retorna todos os itens
-
-```http
-  GET /api/items
-```
-
-| Parâmetro   | Tipo       | Descrição                           |
-| :---------- | :--------- | :---------------------------------- |
-| `api_key` | `string` | **Obrigatório**. A chave da sua API |
-
-#### Retorna um item
-
-```http
-  GET /api/items/${id}
-```
-
+## 📫Documentação da API
 | Parâmetro   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
 | `id`      | `string` | **Obrigatório**. O ID do item que você quer |
 
-#### add(num1, num2)
+#### Retorna lista de estudantes
 
-Recebe dois números e retorna a sua soma.
--->
+```http
+  GET estudantes/
+```
+
+#### Retorna um estudante em específico
+
+```http
+  GET estudantes/${id}
+```
+
+#### Retorna lista de cursos
+
+```http
+  GET cursos/
+```
+
+#### Retorna um curso em específico
+
+```http
+  GET cursos/${id}
+```
+
+#### Retorna lista de matriculas
+
+```http
+  GET matriculas/
+```
+
+#### Retorna um matriculas em específico
+
+```http
+  GET matriculas/${id}
+```
+
+#### Retorna as matriculas de um estudante em específico
+
+```http
+  GET estudantes/${id}/matriculas
+```
+
+#### Retorna as matriculas de um curso em específico
+
+```http
+  GET cursos/${id}/matriculas
+```
+
 ## 👨‍💻Autores
 <table>
     <tr>
