@@ -79,49 +79,49 @@ Inicie o servidor
 #### Retorna lista de estudantes
 
 ```http
-  GET estudantes/
+  GET api/estudantes/
 ```
 
 #### Retorna um estudante em específico
 
 ```http
-  GET estudantes/${id}
+  GET api/estudantes/${id}
 ```
 
 #### Retorna lista de cursos
 
 ```http
-  GET cursos/
+  GET api/cursos/
 ```
 
 #### Retorna um curso em específico
 
 ```http
-  GET cursos/${id}
+  GET api/cursos/${id}
 ```
 
 #### Retorna lista de matriculas
 
 ```http
-  GET matriculas/
+  GET api/matriculas/
 ```
 
 #### Retorna um matriculas em específico
 
 ```http
-  GET matriculas/${id}
+  GET api/matriculas/${id}
 ```
 
 #### Retorna as matriculas de um estudante em específico
 
 ```http
-  GET estudantes/${id}/matriculas
+  GET api/estudantes/${id}/matriculas
 ```
 
 #### Retorna as matriculas de um curso em específico
 
 ```http
-  GET cursos/${id}/matriculas
+  GET api/cursos/${id}/matriculas
 ```
 
 ## 👨‍💻Autores
