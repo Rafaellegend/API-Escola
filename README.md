@@ -75,11 +75,24 @@ Inicie o servidor
 | Parâmetro   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
 | `id`      | `string` | **Obrigatório**. O ID do item que você quer |
+| `parâmetro`      | `string` | **Obrigatório**. O Parametro deve ser um nome ou cpf |
 
 #### Retorna lista de estudantes
 
 ```http
   GET api/estudantes/
+```
+
+#### Retorna lista de estudantes versão 2 (com informações reduzidas)
+
+```http
+  GET api/estudantes/?version=v2
+```
+
+#### Retorna uma lista de estudante com base no parâmetro fornecido
+
+```http
+  GET api/estudantes/?search=${parâmetro}
 ```
 
 #### Retorna um estudante em específico
