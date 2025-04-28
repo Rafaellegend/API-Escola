@@ -70,36 +70,17 @@ Inicie o servidor
   python manage.py runserver 
 ```
 
+Acessando Documentação
+```bash
+  http://localhost:[port]/swagger
+```
 
+<!-- 
 ## 📫Documentação da API
 | Parâmetro   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
 | `id`      | `string` | **Obrigatório**. O ID do item que você quer |
 | `parâmetro`      | `string` | **Obrigatório**. O Parametro deve ser um nome ou cpf |
-
-#### Retorna lista de estudantes
-
-```http
-  GET api/estudantes/
-```
-
-#### Retorna lista de estudantes versão 2 (com informações reduzidas)
-
-```http
-  GET api/estudantes/?version=v2
-```
-
-#### Retorna uma lista de estudante com base no parâmetro fornecido
-
-```http
-  GET api/estudantes/?search=${parâmetro}
-```
-
-#### Retorna um estudante em específico
-
-```http
-  GET api/estudantes/${id}
-```
 
 #### Retorna lista de cursos
 
@@ -113,29 +94,53 @@ Inicie o servidor
   GET api/cursos/${id}
 ```
 
+#### Retorna lista de estudantes
+
+```http
+  GET /estudantes/
+```
+
+#### Retorna lista de estudantes versão 2 (com informações reduzidas)
+
+```http
+  GET /estudantes/?version=v2
+```
+
+#### Retorna uma lista de estudante com base no parâmetro fornecido
+
+```http
+  GET /estudantes/?search=${parâmetro}
+```
+
+#### Retorna um estudante em específico
+
+```http
+  GET /estudantes/${id}
+```
+
 #### Retorna lista de matriculas
 
 ```http
-  GET api/matriculas/
+  GET /matriculas/
 ```
 
 #### Retorna um matriculas em específico
 
 ```http
-  GET api/matriculas/${id}
+  GET /matriculas/${id}
 ```
 
 #### Retorna as matriculas de um estudante em específico
 
 ```http
-  GET api/estudantes/${id}/matriculas
+  GET /estudantes/${id}/matriculas
 ```
 
 #### Retorna as matriculas de um curso em específico
 
 ```http
-  GET api/cursos/${id}/matriculas
-```
+  GET /cursos/${id}/matriculas
+``` -->
 
 ## 👨‍💻Autores
 <table>
