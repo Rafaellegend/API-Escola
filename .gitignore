@@ -32,3 +32,6 @@ media
 .env
 venv/
 env/
+
+# Dump Files
+prototipo_banco.json
